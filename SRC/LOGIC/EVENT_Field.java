@@ -3,7 +3,7 @@ package LOGIC;
 public class EVENT_Field implements Field {
 
     private String name;
-    private Card[] cards;
+    private Card[] cards; //TODO: event cards
 
     public void EVENT_Field(){
         name = "Change";

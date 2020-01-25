@@ -3,7 +3,7 @@ package LOGIC;
 public class COMUNITY_Field implements Field {
 
     private String name;
-    private Card[] cards;
+    private Card[] cards; //TODO community cards
 
     public void COMMUNITY_Field(){
         name = "Community Treasure";
