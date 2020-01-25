@@ -5,6 +5,8 @@ public class City {
     public static Field[] field;
 
     public City(){
+        Dice die = new Dice();
+
         field = new Field[39];
         field[0] = new LOS_Field();
         field[2] = new COMUNITY_Field();
@@ -19,7 +21,7 @@ public class City {
         field[36] = new EVENT_Field();
         field[38] = new PAY_Field();
 
-        System.out.println(Dice.throwDice());
+
 
     }
 }
