@@ -1,11 +1,11 @@
 package LOGIC;
 
-public class COMUNITY_Field implements Field {
+public class COMMUNITY_Field extends Field {
 
     private String name;
     private Card[] cards; //TODO community cards
 
-    public void COMMUNITY_Field(){
+    public COMMUNITY_Field(){
         name = "Community Treasure";
     }
 

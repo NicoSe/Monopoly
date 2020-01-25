@@ -1,10 +1,10 @@
 package LOGIC;
 
-public class LOS_Field implements Field {
+public class LOS_Field extends Field {
 
     private String name;
 
-    public void LOS_Field(){
+    public LOS_Field(){
         name = "LOS";
     }
 

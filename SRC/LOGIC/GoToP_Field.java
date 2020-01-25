@@ -1,10 +1,10 @@
 package LOGIC;
 
-public class GoToP_Field implements Field {
+public class GoToP_Field extends Field {
 
     private String name;
 
-    public void GoToP_Field(){
+    public GoToP_Field(){
         name = "Go To Prison!";
     }
 

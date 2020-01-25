@@ -1,6 +1,6 @@
 package LOGIC;
 
-public class PARK_Field implements Field {
+public class PARK_Field extends Field {
 
     private String name;
 

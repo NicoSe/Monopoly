@@ -6,18 +6,19 @@ import java.util.ArrayList;
 public class Player {
 
     private double money;
-
     public ArrayList<STREET> ownStreets;
-
     private boolean inPrision = false;
+    public int position;
+    private String name;
 
-    private int position;
 
-
-    public void Player(){
+    public Player(String Name) {
+        name = Name;
         money = 1000;
         position = 0;
     }
+
+    public String getName(){return name;}
 
     public double getMoney(){
         return money;
@@ -41,6 +42,8 @@ public class Player {
     public void comeFree(){
         inPrision = false;
     }
+
+    public boolean getIsPrisoned(){return inPrision;}
 
     public boolean allStreets(Color color, int streetCounter) {
         int counter = 0;

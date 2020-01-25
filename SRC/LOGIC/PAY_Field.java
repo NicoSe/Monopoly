@@ -1,11 +1,11 @@
 package LOGIC;
 
-public class PAY_Field implements Field {
+public class PAY_Field extends Field {
 
     private double payAmount;
     private String name;
 
-    public void PAY_Field(String Name, double PayAmount){
+    public PAY_Field(String Name, double PayAmount){
         name = Name;
         payAmount = PayAmount;
     }

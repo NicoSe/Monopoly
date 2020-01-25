@@ -1,9 +1,15 @@
 package LOGIC;
 
-interface Field {
+public class Field {
 
-    String getName();
+    private String name = null;
+
+    public String getName(){
+        return name;
+    }
 
     //execute the spezific action an the player who moved, e.g. buy a street
-    void action(Player player);
+    public void action(Player player){
+
+    }
 }

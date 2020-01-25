@@ -1,11 +1,11 @@
 package LOGIC;
 
-public class EVENT_Field implements Field {
+public class EVENT_Field extends Field {
 
     private String name;
     private Card[] cards; //TODO: event cards
 
-    public void EVENT_Field(){
+    public EVENT_Field(){
         name = "Change";
     }
 

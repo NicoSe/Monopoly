@@ -2,7 +2,7 @@ package LOGIC;
 
 import java.awt.*;
 
-public class STREET implements Field {
+public class STREET extends Field {
 
     private String name;
     private Player owner;
@@ -23,7 +23,7 @@ public class STREET implements Field {
     private double house4fee;
     private double hotelfee;
 
-    public void Field(String Name, double Prize, int StreetCounter, double Hypothek, Color Color, double HousePrize, double HotelPrize,
+    public STREET(String Name, double Prize, int StreetCounter, double Hypothek, Color Color, double HousePrize, double HotelPrize,
                       double Fee, double FeeAll, double House1fee, double House2fee, double House3fee, double House4fee, double Hotelfee){
         name = Name;
         owner = null;
