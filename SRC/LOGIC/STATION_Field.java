@@ -2,7 +2,7 @@ package LOGIC;
 
 import java.awt.*;
 
-public class STREET extends Field implements Streets{
+public class STATION_Field extends Field implements Streets{
 
     private String name;
     private Player owner;
@@ -11,33 +11,24 @@ public class STREET extends Field implements Streets{
     private double hypothek;
     private int streetCounter;
     private boolean isHypothek = false;
-    private double housePrize;
-    private int houses;
-    private int hotels;
-    private double fee;
     private double house1fee;
     private double house2fee;
     private double house3fee;
     private double house4fee;
-    private double hotelfee;
 
-    public STREET(String Name, double Prize, int StreetCounter, double Hypothek, Color Color, double HousePrize,
-                      double Fee, double House1fee, double House2fee, double House3fee, double House4fee, double Hotelfee){
+    public STATION_Field(String Name, double Prize, int StreetCounter, double Hypothek, Color Color,
+                        double House1fee, double House2fee, double House3fee, double House4fee){
         name = Name;
         owner = null;
         prize = Prize;
         streetCounter = StreetCounter;
         hypothek = Hypothek;
         color = Color;
-        housePrize = HousePrize;
-        fee = Fee;
         house1fee = House1fee;
         house2fee = House2fee;
         house3fee = House3fee;
         house4fee = House4fee;
-        hotelfee = Hotelfee;
     }
-
     @Override
     public void changeOwner(Player newPlayer){
         owner = newPlayer;
@@ -87,18 +78,16 @@ public class STREET extends Field implements Streets{
     public boolean payTax(Player player){
         if(owner != null){
             double payAmount = 0;
-            switch (houses){
-                case 0: {
-                    if(owner.allStreets(color, streetCounter)) payAmount += fee * 2;
-                    else payAmount += fee;
-                    break;
-                }
-                case 1: payAmount += house1fee;
-                case 2: payAmount += house2fee;
-                case 3: payAmount += house3fee;
-                case 4: payAmount += house4fee;
+            int counter = 0;
+            for(int i=0; i<owner.ownStreets.size(); i++){
+                if(owner.ownStreets.get(i).getColor() == color) counter++;
             }
-            if(hotels == 1) payAmount += hotelfee;
+            switch (counter){
+                case 1: payAmount = house1fee;break;
+                case 2: payAmount = house2fee;break;
+                case 3: payAmount = house3fee;break;
+                case 4: payAmount = house4fee;break;
+            }
 
             if(player.getMoney() >= payAmount){
                 player.changeMoney(payAmount,false);
@@ -117,30 +106,5 @@ public class STREET extends Field implements Streets{
     @Override
     public void action(Player player) {
         //TODO Player get Option: buyStreet, pay, ignore
-    }
-
-    public boolean buildHouse(Player player){
-        if (player.allStreets(color, streetCounter)) {
-            if (hotels >= 1 || houses >= 4) return false;
-            if (player.getMoney() >= housePrize) {
-                player.changeMoney(housePrize, false);
-                houses++;
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public boolean buildHotel(Player player){
-        if (houses != 4 || hotels != 0) return false;
-        else if (houses == 4 && hotels == 0){
-            if(player.getMoney() >= housePrize){
-                player.changeMoney(housePrize, false);
-                houses = 0;
-                hotels = 1;
-                return true;
-            }
-        }
-        return false;
     }
 }

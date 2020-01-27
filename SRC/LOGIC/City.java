@@ -6,6 +6,7 @@ public class City {
 
     public City(){
         field = new Field[39];
+
         field[0] = new LOS_Field();
         field[1] = new Field();
         field[2] = new COMMUNITY_Field();
@@ -49,5 +50,9 @@ public class City {
 
     public Field getField(int pos){
         return field[pos];
+    }
+
+    public boolean loadCity(){
+        return true;
     }
 }

@@ -1,0 +1,23 @@
+name,prize,streetcounter,hypothek,color,houseprize,fee,fee1,fee2,fee3,fee4,hotelfee
+Mediterranean Avenue,60,2,30,brown,50,2,10,30,90,160,250
+Baltic Avenue,60,2,30,brown,50,4,20,60,180,320,450
+Oriental Avenue,100,3,50,cyan,50,6,30,90,270,400,550
+Vermont Avenue,100,3,50,cyan,50,6,30,90,270,400,550
+Connecticut Avenue,120,3,60,cyan,50,8,40,100,300,450,600
+St. Charles Place,140,3,70,pink,100,10,50,150,450,625,750
+States Avenue,140,3,70,pink,100,10,50,150,450,625,750
+Virginia Avenue,140,3,80,pink,100,12,60,180,500,700,900
+St. James Place,180,3,90,orange,100,14,70,200,550,750,950
+Tennessee Avenue,180,3,90,orange,100,14,70,200,550,750,950
+New York Avenue,200,3,100,orange,100,16,80,220,600,800,1000
+Kentucky Avenue,220,3,110,red,150,18,90,250,700,875,1050
+Indiana Avenue,220,3,110,red,150,18,90,250,700,875,1050
+Illinois Avenue,240,3,120,red,150,20,100,300,750,925,1100
+Atlantic Avenue,260,3,130,yellow,150,22,110,330,800,975,1150
+Ventnor Avenue,260,3,130,yellow,150,22,110,330,800,975,1150
+Marvin Gardens,280,3,140,yellow,150,24,120,360,850,1025,1200
+Pacific Avenue,300,3,150,green,200,26,130,390,900,1100,1275
+North Carolina Avenue,300,3,150,green,200,26,130,390,900,1100,1275
+Pennsylvania Avenue,320,3,160,green,200,28,150,450,1000,1200,1400
+Park Place,350,2,175,blue,200,35,175,500,1100,1300,1500
+Boardwalk,400,2,200,blue,200,50,200,600,1400,1700,2000

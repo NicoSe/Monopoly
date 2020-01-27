@@ -1,15 +1,19 @@
 package CONTROL;
 
+import GUI.MainFrame;
 import LOGIC.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.util.Scanner;
 
 
 public class Main{
 
     public static void main(String[] args){
+
+
+        MainFrame mf = new MainFrame();
+
+/*
         City city = new City();
         Player p1 = new Player("Nico");
 
@@ -45,6 +49,6 @@ public class Main{
 
             Scanner in = new Scanner(System.in);
             String s = in. nextLine();
-        }
+        }*/
     }
 }

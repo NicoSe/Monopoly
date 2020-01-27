@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Player {
 
     private double money;
-    public ArrayList<STREET> ownStreets;
+    public ArrayList<Streets> ownStreets;
     private boolean inPrision = false;
     public int position;
     private String name;
