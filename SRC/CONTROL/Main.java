@@ -13,10 +13,9 @@ public class Main{
 
         MainFrame mf = new MainFrame();
 
-/*
         City city = new City();
         Player p1 = new Player("Nico");
-
+/*
         Dice die = new Dice();
         int[] dices = new int[2];
         int equalsCounter = 0;
