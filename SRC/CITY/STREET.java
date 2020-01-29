@@ -1,4 +1,6 @@
-package LOGIC;
+package CITY;
+
+import LOGIC.Player;
 
 import java.awt.*;
 
@@ -116,6 +118,7 @@ public class STREET extends Field implements Streets{
 
     @Override
     public void action(Player player) {
+        System.out.println(">>Hi");
         //TODO Player get Option: buyStreet, pay, ignore
     }
 

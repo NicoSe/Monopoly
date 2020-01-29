@@ -1,4 +1,6 @@
-package LOGIC;
+package CITY;
+
+import LOGIC.Player;
 
 public class PAY_Field extends Field {
 

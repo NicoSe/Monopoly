@@ -1,4 +1,6 @@
-package LOGIC;
+package CITY;
+
+import LOGIC.Player;
 
 public class GoToP_Field extends Field {
 

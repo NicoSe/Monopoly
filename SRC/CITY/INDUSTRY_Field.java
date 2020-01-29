@@ -1,8 +1,11 @@
-package LOGIC;
+package CITY;
+
+import LOGIC.Dice;
+import LOGIC.Player;
 
 import java.awt.*;
 
-public class STATION_Field extends Field implements Streets{
+public class INDUSTRY_Field extends Field implements Streets {
 
     private String name;
     private Player owner;
@@ -11,23 +14,15 @@ public class STATION_Field extends Field implements Streets{
     private double hypothek;
     private int streetCounter;
     private boolean isHypothek = false;
-    private double house1fee;
-    private double house2fee;
-    private double house3fee;
-    private double house4fee;
 
-    public STATION_Field(String Name, double Prize, int StreetCounter, double Hypothek, Color Color,
-                        double House1fee, double House2fee, double House3fee, double House4fee){
+
+    public INDUSTRY_Field(String Name, double Prize, int StreetCounter, double Hypothek, Color Color){
         name = Name;
         owner = null;
         prize = Prize;
         streetCounter = StreetCounter;
         hypothek = Hypothek;
         color = Color;
-        house1fee = House1fee;
-        house2fee = House2fee;
-        house3fee = House3fee;
-        house4fee = House4fee;
     }
     @Override
     public void changeOwner(Player newPlayer){
@@ -83,10 +78,8 @@ public class STATION_Field extends Field implements Streets{
                 if(owner.ownStreets.get(i).getColor() == color) counter++;
             }
             switch (counter){
-                case 1: payAmount = house1fee;break;
-                case 2: payAmount = house2fee;break;
-                case 3: payAmount = house3fee;break;
-                case 4: payAmount = house4fee;break;
+                case 1: payAmount = (Dice.dices[0] + Dice.dices[1]) * 4;break;
+                case 2: payAmount = (Dice.dices[0] + Dice.dices[1]) * 10;break;
             }
 
             if(player.getMoney() >= payAmount){
@@ -105,6 +98,8 @@ public class STATION_Field extends Field implements Streets{
 
     @Override
     public void action(Player player) {
+        System.out.println(">>Hi");
         //TODO Player get Option: buyStreet, pay, ignore
     }
+
 }

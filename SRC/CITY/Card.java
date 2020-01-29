@@ -1,4 +1,4 @@
-package LOGIC;
+package CITY;
 
 public interface Card {
 }

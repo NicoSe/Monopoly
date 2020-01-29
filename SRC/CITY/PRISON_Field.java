@@ -1,11 +1,13 @@
-package LOGIC;
+package CITY;
 
-public class LOS_Field extends Field {
+import LOGIC.Player;
+
+public class PRISON_Field extends Field {
 
     private String name;
 
-    public LOS_Field(){
-        name = "LOS";
+    public PRISON_Field(){
+        name = "Prison";
     }
 
     @Override
@@ -15,6 +17,6 @@ public class LOS_Field extends Field {
 
     @Override
     public void action(Player player) {
-        player.changeMoney(2000, true);
+        System.out.println(">>Visit");
     }
 }

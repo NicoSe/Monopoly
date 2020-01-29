@@ -1,4 +1,6 @@
-package LOGIC;
+package CITY;
+
+import LOGIC.Player;
 
 public class EVENT_Field extends Field {
 

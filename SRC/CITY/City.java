@@ -1,8 +1,7 @@
-package LOGIC;
+package CITY;
 
 import java.awt.*;
 import java.io.*;
-import java.nio.Buffer;
 import java.nio.charset.StandardCharsets;
 
 public class City {
@@ -14,7 +13,7 @@ public class City {
 
         field[0] = new LOS_Field();
         field[2] = new COMMUNITY_Field();
-        field[4] = new PAY_Field("Income Tax", 2000);
+        field[4] = new PAY_Field("Income Tax", 200);
         field[7] = new EVENT_Field();
         field[10] = new PRISON_Field();
         field[17] = new COMMUNITY_Field();
@@ -23,7 +22,7 @@ public class City {
         field[30] = new GoToP_Field();
         field[33] = new COMMUNITY_Field();
         field[36] = new EVENT_Field();
-        field[38] = new PAY_Field("Luxury Tax", 1000);
+        field[38] = new PAY_Field("Luxury Tax", 100);
 
         loadCity();
     }

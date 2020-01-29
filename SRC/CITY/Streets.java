@@ -1,5 +1,7 @@
-package LOGIC;
+package CITY;
 
+
+import LOGIC.Player;
 
 import java.awt.*;
 
