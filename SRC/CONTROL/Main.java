@@ -3,6 +3,7 @@ package CONTROL;
 import GUI.MainFrame;
 import CITY.*;
 import LOGIC.Dice;
+import LOGIC.Options;
 import LOGIC.Player;
 
 import java.util.Scanner;
@@ -12,8 +13,10 @@ public class Main{
 
     public static void main(String[] args){
 
-
+        Options options = new Options();
         MainFrame mf = new MainFrame();
+
+
 
         City city = new City();
         Player p1 = new Player("Nico");

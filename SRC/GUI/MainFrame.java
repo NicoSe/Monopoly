@@ -15,13 +15,16 @@ public class MainFrame {
     }
 
     public void Components(){
-        /*jf = new JFrame("Monopoly");
+        jf = new JFrame("Monopoly");
         jf.setExtendedState(JFrame.MAXIMIZED_BOTH);
         jf.dispose();
         jf.setUndecorated(true);
         jf.setLocationRelativeTo(null);
         jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        jf.setVisible(true);*/
+        jf.setVisible(true);
+
+
+        jf.add(new pStreet(Color.BLUE,"Haus", 200));
     }
 
 

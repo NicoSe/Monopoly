@@ -2,34 +2,23 @@ package LOGIC;
 
 public class Options {
 
-    private static float volume;
-    private static String moneySpezifier;
-    private static int playerAmount;
+    public static float volume;
+    public static String moneySpecifier;
+    public static int playerAmount;
+    public static boolean mode3D = false;
 
     public Options(){
         volume = 100;
-        moneySpezifier = "M";
+        moneySpecifier = "M";
         playerAmount = 2;
-    }
-
-    public float getVolume() {
-        return volume;
     }
 
     public void setVolume(float Volume) {
         volume = Volume;
     }
 
-    public String getMoneySize() {
-        return moneySpezifier;
-    }
-
     public void setMoneySize(String MoneySpezifier) {
-        moneySpezifier = MoneySpezifier;
-    }
-
-    public int getPlayerAmount() {
-        return playerAmount;
+        moneySpecifier = MoneySpezifier;
     }
 
     public void setPlayerAmount(int PlayerAmount) {
