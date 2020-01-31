@@ -21,9 +21,13 @@ public class pStreet extends JPanel {
             switch (orientation) {
                 case 0: {
                     this.setSize(new Dimension(85, 150));
+                    this.setMinimumSize(new Dimension(85,150));
+                    this.setMaximumSize(new Dimension(85,150));
 
                     pColor.setSize(new Dimension(75, 30));
                     pColor.setLocation(5, 115);
+                    pColor.setMinimumSize(new Dimension(75, 30));
+                    pColor.setMaximumSize(new Dimension(75,30));
 
                     pName.setLocation(5, 5);
                     pName2.setLocation(5, 15);
@@ -32,9 +36,13 @@ public class pStreet extends JPanel {
                 }
                 case 1: {
                     this.setSize(new Dimension(150, 85));
+                    this.setMinimumSize(new Dimension(150,85));
+                    this.setMaximumSize(new Dimension(150,85));
 
                     pColor.setSize(new Dimension(30, 75));
                     pColor.setLocation(115, 5);
+                    pColor.setMinimumSize(new Dimension(30, 75));
+                    pColor.setMaximumSize(new Dimension(30,75));
 
                     pName.setLocation(25, 5);
                     pName2.setLocation(25, 15);
@@ -43,9 +51,13 @@ public class pStreet extends JPanel {
                 }
                 case 2: {
                     this.setSize(new Dimension(150, 85));
+                    this.setMinimumSize(new Dimension(150,85));
+                    this.setMaximumSize(new Dimension(150,85));
 
                     pColor.setSize(new Dimension(30, 75));
                     pColor.setLocation(5, 5);
+                    pColor.setMinimumSize(new Dimension(30, 75));
+                    pColor.setMaximumSize(new Dimension(30,75));
 
                     pName.setLocation(55, 4);
                     pName2.setLocation(55, 15);
@@ -54,9 +66,13 @@ public class pStreet extends JPanel {
                 }
                 case 3: {
                     this.setSize(new Dimension(85, 150));
+                    this.setMinimumSize(new Dimension(85,150));
+                    this.setMaximumSize(new Dimension(85,150));
 
                     pColor.setSize(new Dimension(75, 30));
                     pColor.setLocation(5, 5);
+                    pColor.setMinimumSize(new Dimension(75, 30));
+                    pColor.setMaximumSize(new Dimension(75,30));
 
                     pName.setLocation(5, 40);
                     pName2.setLocation(5, 50);
@@ -73,6 +89,7 @@ public class pStreet extends JPanel {
 
             pColor.setBackground(c);
             pColor.setBorder(new CompoundBorder(pColor.getBorder(), new LineBorder(Color.BLACK, 2)));
+
 
             pName.setSize(new Dimension(75, 10));
             pName.setFont(new Font("Arial", Font.PLAIN, 10));
@@ -119,7 +136,7 @@ public class pStreet extends JPanel {
                     this.setSize(new Dimension(85, 150));
 
                     try {
-                        png.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/Sprites/station_icon2.png"))));
+                        png.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/Sprites/station_icon.png"))));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
