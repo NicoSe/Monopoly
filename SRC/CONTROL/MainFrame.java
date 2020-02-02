@@ -1,6 +1,7 @@
 package CONTROL;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MainFrame {
 
@@ -46,11 +47,26 @@ public class MainFrame {
     private JPanel Street15;
     private JLabel lbNStreet15;
     private JLabel lbPStreet15;
+    private JPanel Street14;
+    private JLabel lbNStreet14;
+    private JLabel lbPStreet14;
+    private JPanel Steert13;
+    private JLabel lbNStreet13;
+    private JLabel lbPStreet13;
+    private JPanel Street12;
+    private JLabel lbNStreet12;
+    private JLabel lbPStreet12;
+    private JPanel Street11;
+    private JLabel lbNStreet11;
+    private JLabel lbPStreet11;
+    private JPanel Street10;
 
     public static void main(String[] args) {
         JFrame jf = new JFrame("Monopoly");
         jf.setContentPane(new MainFrame().MainPanel);
-        jf.setSize(800,800);
+        jf.setSize(1100,800);
+        jf.setExtendedState(Frame.MAXIMIZED_BOTH);
+        jf.setUndecorated(true);
         jf.setVisible(true);
         jf.setLocationRelativeTo(null);
         jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

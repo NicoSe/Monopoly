@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CONTROL.MainFrame">
-  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="22" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="22" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1358" height="676"/>
+      <xy x="20" y="20" width="1423" height="1233"/>
     </constraints>
     <properties>
       <background color="-12746021"/>
+      <enabled value="false"/>
       <foreground color="-16777216"/>
     </properties>
-    <border type="none"/>
+    <border type="line">
+      <title-color color="-16777216"/>
+      <color color="-16777216"/>
+    </border>
     <children>
       <vspacer id="5b396">
         <constraints>
@@ -22,7 +26,7 @@
       </vspacer>
       <vspacer id="b5ce7">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="22" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="3" column="0" row-span="1" col-span="22" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="5"/>
             <preferred-size width="-1" height="5"/>
             <maximum-size width="-1" height="15"/>
@@ -31,7 +35,7 @@
       </vspacer>
       <hspacer id="b742c">
         <constraints>
-          <grid row="1" column="20" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="20" row-span="2" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="5" height="-1"/>
             <preferred-size width="5" height="-1"/>
             <maximum-size width="15" height="-1"/>
@@ -47,10 +51,10 @@
           </grid>
         </constraints>
       </hspacer>
-      <grid id="c5d0a" binding="Board" layout-manager="GridLayoutManager" row-count="6" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+      <grid id="c5d0a" binding="Board" layout-manager="GridLayoutManager" row-count="11" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="11" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="2" col-span="11" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-9552883"/>
@@ -1209,7 +1213,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="5fc58" binding="Street15" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="5fc58" binding="Street15" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1230,7 +1234,7 @@
               <grid id="a9959" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="3" col-span="3" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1259,10 +1263,25 @@
                   </component>
                 </children>
               </grid>
+              <component id="da5f0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="3" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="75"/>
+                    <preferred-size width="75" height="75"/>
+                    <maximum-size width="95" height="95"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="Sprites/station_icon.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
               <grid id="75c6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1292,23 +1311,476 @@
                   </component>
                 </children>
               </grid>
-              <component id="9819b" class="javax.swing.JLabel">
+            </children>
+          </grid>
+          <grid id="9fc50" binding="Street14" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="85"/>
+                <preferred-size width="150" height="85"/>
+                <maximum-size width="170" height="105"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-3090471"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="line">
+              <font/>
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <grid id="7f5f3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
+                    <minimum-size width="30" height="75"/>
+                    <preferred-size width="30" height="75"/>
+                    <maximum-size width="35" height="95"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-65320"/>
+                </properties>
+                <border type="etched">
+                  <color color="-16777216"/>
+                </border>
+                <children/>
+              </grid>
+              <grid id="be78f" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="61c42" class="javax.swing.JLabel" binding="lbNStreet14">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="20"/>
+                        <preferred-size width="75" height="20"/>
+                        <maximum-size width="95" height="20"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="10"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="19ce3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="92170" class="javax.swing.JLabel" binding="lbPStreet14">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="15"/>
+                        <preferred-size width="75" height="15"/>
+                        <maximum-size width="95" height="15"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="14"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="(200€)"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="3290a" binding="Steert13" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="85"/>
+                <preferred-size width="150" height="85"/>
+                <maximum-size width="170" height="105"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-3090471"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="line">
+              <font/>
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <grid id="ffc6f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
+                    <minimum-size width="30" height="75"/>
+                    <preferred-size width="30" height="75"/>
+                    <maximum-size width="35" height="95"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-65320"/>
+                </properties>
+                <border type="etched">
+                  <color color="-16777216"/>
+                </border>
+                <children/>
+              </grid>
+              <grid id="8ede3" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="cf46f" class="javax.swing.JLabel" binding="lbNStreet13">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="20"/>
+                        <preferred-size width="75" height="20"/>
+                        <maximum-size width="95" height="20"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="10"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ed5ed" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="4aa2a" class="javax.swing.JLabel" binding="lbPStreet13">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="15"/>
+                        <preferred-size width="68" height="15"/>
+                        <maximum-size width="95" height="15"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="14"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="(200€)"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="45b9e" binding="Street12" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="85"/>
+                <preferred-size width="150" height="85"/>
+                <maximum-size width="170" height="105"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-3090471"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="line">
+              <font/>
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <grid id="ba1b1" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="3" col-span="3" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="cd69b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="20"/>
+                        <preferred-size width="75" height="20"/>
+                        <maximum-size width="95" height="20"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="10"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="cb4b" class="javax.swing.JLabel" binding="lbNStreet12">
+                <constraints>
+                  <grid row="0" column="3" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="75" height="75"/>
                     <preferred-size width="75" height="75"/>
                     <maximum-size width="95" height="95"/>
                   </grid>
                 </constraints>
                 <properties>
-                  <enabled value="true"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <icon value="Sprites/station_icon.png"/>
+                  <icon value="Sprites/electricity_works_icon.png"/>
                   <text value=""/>
-                  <verticalAlignment value="0"/>
                 </properties>
               </component>
+              <grid id="40e41" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3a4b" class="javax.swing.JLabel" binding="lbPStreet12">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="15"/>
+                        <preferred-size width="75" height="15"/>
+                        <maximum-size width="95" height="15"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="14"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="(200€)"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="73e3c" binding="Street11" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="85"/>
+                <preferred-size width="150" height="85"/>
+                <maximum-size width="170" height="105"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-3090471"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="line">
+              <font/>
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <grid id="6013b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
+                    <minimum-size width="30" height="75"/>
+                    <preferred-size width="30" height="75"/>
+                    <maximum-size width="35" height="95"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-65320"/>
+                </properties>
+                <border type="etched">
+                  <color color="-16777216"/>
+                </border>
+                <children/>
+              </grid>
+              <grid id="66146" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="680d1" class="javax.swing.JLabel" binding="lbNStreet11">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="20"/>
+                        <preferred-size width="75" height="20"/>
+                        <maximum-size width="95" height="20"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="10"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="94df4" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="75" height="35"/>
+                    <maximum-size width="95" height="35"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f7f96" class="javax.swing.JLabel" binding="lbPStreet11">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="15"/>
+                        <preferred-size width="68" height="15"/>
+                        <maximum-size width="95" height="15"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="14"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="(200€)"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="8b524" binding="Street10" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="150" height="150"/>
+                <preferred-size width="150" height="150"/>
+                <maximum-size width="150" height="170"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-3090471"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="line">
+              <font/>
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <component id="7e932" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="150" height="120"/>
+                    <preferred-size width="150" height="120"/>
+                    <maximum-size width="170" height="150"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="Sprites/prison_icon.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <grid id="19b7" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-3090471"/>
+                  <enabled value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3887b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <minimum-size width="150" height="10"/>
+                        <preferred-size width="150" height="10"/>
+                        <maximum-size width="170" height="10"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <foreground color="-14474461"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="JUST VISITING:"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
         </children>
