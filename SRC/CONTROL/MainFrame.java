@@ -98,6 +98,15 @@ public class MainFrame {
     private JPanel Street37;
     private JLabel lbPStreet37;
     private JLabel lbNStreet37;
+    private JPanel Street35;
+    private JLabel lbNStreet35;
+    private JLabel lbPStreet35;
+    private JPanel Street38;
+    private JLabel lbPStreet38;
+    private JLabel lbNStreet38;
+    private JPanel Street36;
+    private JPanel Street0;
+    private JPanel Street33;
 
     public static void main(String[] args) {
         JFrame jf = new JFrame("Monopoly");
