@@ -10,12 +10,10 @@ public interface Streets {
     void changeOwner(Player player);
     Player getOwner();
     void changeHypothekStatus();
-    double getHypothek();
+    int getHypothek();
     boolean isHypothek();
-    double getPrize();
     boolean buyStreet(Player player);
     boolean payTax(Player player);
-    String getName();
     void action(Player player);
 
 }

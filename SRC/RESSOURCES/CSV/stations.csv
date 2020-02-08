@@ -1,5 +1,5 @@
 name,prize,streetcounter,hypothek,color,fee1,fee2,fee3,fee4
-South Station,200,4,100,white,25,50,100,200
-West Station,200,4,100,white,25,50,100,200
-North Station,200,4,100,white,25,50,100,200
-Main Station,200,4,100,white,25,50,100,200
+<html>South Station</html>,200,4,100,white,25,50,100,200
+<html>West Station</html>,200,4,100,white,25,50,100,200
+<html>North Station</html>,200,4,100,white,25,50,100,200
+<html>Main Station</html>,200,4,100,white,25,50,100,200

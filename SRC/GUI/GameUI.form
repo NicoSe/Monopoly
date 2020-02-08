@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.GameUI">
-  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1180" height="1115"/>
+      <xy x="20" y="20" width="1295" height="1150"/>
     </constraints>
     <properties>
       <background color="-12746021"/>
@@ -17,7 +17,7 @@
     <children>
       <vspacer id="5b396">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="0" column="2" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="5"/>
             <preferred-size width="-1" height="5"/>
             <maximum-size width="-1" height="15"/>
@@ -26,7 +26,7 @@
       </vspacer>
       <vspacer id="b5ce7">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="6" column="2" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="5"/>
             <preferred-size width="-1" height="5"/>
             <maximum-size width="-1" height="15"/>
@@ -35,7 +35,7 @@
       </vspacer>
       <hspacer id="b742c">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="5" row-span="5" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="5" height="-1"/>
             <preferred-size width="5" height="-1"/>
             <maximum-size width="15" height="-1"/>
@@ -44,9 +44,9 @@
       </hspacer>
       <hspacer id="19646">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="2" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="5" height="-1"/>
-            <preferred-size width="5" height="-1"/>
+            <preferred-size width="0" height="0"/>
             <maximum-size width="15" height="-1"/>
           </grid>
         </constraints>
@@ -54,14 +54,14 @@
       <grid id="c5d0a" binding="Board" layout-manager="GridLayoutManager" row-count="11" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="3" row-span="5" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-3090471"/>
         </properties>
         <border type="none"/>
         <children>
-          <grid id="593fd" binding="Street21" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="593fd" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -148,7 +148,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="ec119" binding="Street20" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="ec119" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -183,7 +183,7 @@
               </component>
             </children>
           </grid>
-          <grid id="e66be" binding="Street19" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="e66be" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -221,7 +221,7 @@
               <grid id="7316" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -234,7 +234,7 @@
                 <children>
                   <component id="4c009" class="javax.swing.JLabel" binding="lbNStreet19">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -253,7 +253,7 @@
               <grid id="1c718" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -285,7 +285,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="9199b" binding="Street22" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="9199b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -318,7 +318,7 @@
               </component>
             </children>
           </grid>
-          <grid id="c0e90" binding="Street23" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="c0e90" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -405,7 +405,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="fb741" binding="Street24" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="fb741" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -492,7 +492,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="7943f" binding="Street25" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="7943f" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -593,7 +593,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="6e0bb" binding="Street26" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="6e0bb" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -680,7 +680,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="7d019" binding="Street27" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="7d019" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -767,7 +767,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="7bd5b" binding="Street28" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="7bd5b" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -832,7 +832,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="fa75a" class="javax.swing.JLabel">
+                  <component id="fa75a" class="javax.swing.JLabel" binding="lbPStreet28">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="2" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="15"/>
@@ -851,7 +851,7 @@
                   </component>
                 </children>
               </grid>
-              <component id="9defd" class="javax.swing.JLabel" binding="lbPStreet28">
+              <component id="9defd" class="javax.swing.JLabel">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="75" height="75"/>
@@ -868,7 +868,7 @@
               </component>
             </children>
           </grid>
-          <grid id="ab513" binding="Street29" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="ab513" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -955,7 +955,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="ab58d" binding="Street30" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="ab58d" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -990,7 +990,7 @@
               </component>
             </children>
           </grid>
-          <grid id="7e23f" binding="Street18" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="7e23f" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1028,7 +1028,7 @@
               <grid id="41053" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1041,7 +1041,7 @@
                 <children>
                   <component id="e42a6" class="javax.swing.JLabel" binding="lbNStreet18">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -1060,7 +1060,7 @@
               <grid id="7ef05" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1092,7 +1092,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="d9b5f" binding="Street17" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="d9b5f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1123,7 +1123,7 @@
               </component>
             </children>
           </grid>
-          <grid id="545b4" binding="Street16" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="545b4" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1161,7 +1161,7 @@
               <grid id="e3e74" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1174,7 +1174,7 @@
                 <children>
                   <component id="db9b1" class="javax.swing.JLabel" binding="lbNStreet16">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -1186,6 +1186,7 @@
                       <horizontalAlignment value="2"/>
                       <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                      <verticalAlignment value="0"/>
                     </properties>
                   </component>
                 </children>
@@ -1193,7 +1194,7 @@
               <grid id="fcadd" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1225,7 +1226,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="5fc58" binding="Street15" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="5fc58" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1246,7 +1247,7 @@
               <grid id="a9959" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="3" col-span="3" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1259,7 +1260,7 @@
                 <children>
                   <component id="2fce6" class="javax.swing.JLabel" binding="lbNStreet15">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -1271,13 +1272,15 @@
                       <horizontalAlignment value="2"/>
                       <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                      <verticalAlignment value="0"/>
+                      <verticalTextPosition value="0"/>
                     </properties>
                   </component>
                 </children>
               </grid>
               <component id="da5f0" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="0" column="3" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="75" height="75"/>
                     <preferred-size width="75" height="75"/>
                     <maximum-size width="95" height="95"/>
@@ -1290,10 +1293,10 @@
                   <text value=""/>
                 </properties>
               </component>
-              <grid id="75c6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="3ace9" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1304,7 +1307,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="cd69f" class="javax.swing.JLabel" binding="lbPStreet15">
+                  <component id="1d655" class="javax.swing.JLabel" binding="lbPStreet15">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="15"/>
@@ -1318,14 +1321,15 @@
                       <horizontalAlignment value="2"/>
                       <horizontalTextPosition value="0"/>
                       <text value="(200€)"/>
-                      <verticalAlignment value="0"/>
+                      <verticalAlignment value="3"/>
+                      <verticalTextPosition value="0"/>
                     </properties>
                   </component>
                 </children>
               </grid>
             </children>
           </grid>
-          <grid id="9fc50" binding="Street14" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="9fc50" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1363,7 +1367,7 @@
               <grid id="be78f" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1376,7 +1380,7 @@
                 <children>
                   <component id="61c42" class="javax.swing.JLabel" binding="lbNStreet14">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -1388,6 +1392,7 @@
                       <horizontalAlignment value="2"/>
                       <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                      <verticalAlignment value="0"/>
                     </properties>
                   </component>
                 </children>
@@ -1395,7 +1400,7 @@
               <grid id="19ce3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1427,7 +1432,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="3290a" binding="Street13" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="3290a" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1465,7 +1470,7 @@
               <grid id="8ede3" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1478,7 +1483,7 @@
                 <children>
                   <component id="cf46f" class="javax.swing.JLabel" binding="lbNStreet13">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -1490,6 +1495,7 @@
                       <horizontalAlignment value="2"/>
                       <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                      <verticalAlignment value="0"/>
                     </properties>
                   </component>
                 </children>
@@ -1497,7 +1503,7 @@
               <grid id="ed5ed" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1529,7 +1535,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="45b9e" binding="Street12" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="45b9e" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1550,7 +1556,7 @@
               <grid id="ba1b1" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="3" col-span="3" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="3" col-span="3" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1561,9 +1567,9 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="cd69b" class="javax.swing.JLabel">
+                  <component id="cd69b" class="javax.swing.JLabel" binding="lbNStreet12">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -1575,11 +1581,12 @@
                       <horizontalAlignment value="2"/>
                       <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                      <verticalAlignment value="0"/>
                     </properties>
                   </component>
                 </children>
               </grid>
-              <component id="cb4b" class="javax.swing.JLabel" binding="lbNStreet12">
+              <component id="cb4b" class="javax.swing.JLabel">
                 <constraints>
                   <grid row="0" column="3" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="75" height="75"/>
@@ -1597,7 +1604,7 @@
               <grid id="40e41" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1629,7 +1636,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="73e3c" binding="Street11" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="73e3c" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1667,7 +1674,7 @@
               <grid id="66146" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1680,7 +1687,7 @@
                 <children>
                   <component id="680d1" class="javax.swing.JLabel" binding="lbNStreet11">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -1692,6 +1699,7 @@
                       <horizontalAlignment value="2"/>
                       <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                      <verticalAlignment value="0"/>
                     </properties>
                   </component>
                 </children>
@@ -1699,7 +1707,7 @@
               <grid id="94df4" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -1731,7 +1739,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="8b524" binding="Street10" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="8b524" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1795,7 +1803,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="f0362" binding="Street9" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="f0362" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1882,7 +1890,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="47bfb" binding="Street8" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="47bfb" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -1969,7 +1977,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="88b12" binding="Street6" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="88b12" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2056,7 +2064,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="e80ab" binding="Street7" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="e80ab" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2089,7 +2097,7 @@
               </component>
             </children>
           </grid>
-          <grid id="a29bf" binding="Street5" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="a29bf" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2190,7 +2198,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="8ea1" binding="Street4" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="8ea1" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2276,7 +2284,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="f1d2d" binding="Street3" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="f1d2d" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2363,7 +2371,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="9c704" binding="Street1" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="9c704" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="9" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2450,7 +2458,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="f2064" binding="Street2" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="f2064" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2481,7 +2489,7 @@
               </component>
             </children>
           </grid>
-          <grid id="b332e" binding="Street31" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="b332e" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="1" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2499,10 +2507,10 @@
               <color color="-16777216"/>
             </border>
             <children>
-              <grid id="b9738" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="b9738" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2525,11 +2533,16 @@
                       <font name="Consolas" size="14"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="(200€)"/>
                       <verticalAlignment value="0"/>
                     </properties>
                   </component>
+                  <hspacer id="84509">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
                 </children>
               </grid>
               <grid id="bade8" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -2549,10 +2562,10 @@
                 </border>
                 <children/>
               </grid>
-              <grid id="8cf4" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="8cf4" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2565,7 +2578,7 @@
                 <children>
                   <component id="6073a" class="javax.swing.JLabel" binding="lbNStreet31">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -2575,15 +2588,17 @@
                       <font name="Consolas" size="10"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
+                      <verticalAlignment value="0"/>
+                      <verticalTextPosition value="0"/>
                     </properties>
                   </component>
                 </children>
               </grid>
             </children>
           </grid>
-          <grid id="f4efd" binding="Street32" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="f4efd" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="2" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2601,10 +2616,10 @@
               <color color="-16777216"/>
             </border>
             <children>
-              <grid id="eef6d" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="eef6d" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2627,11 +2642,16 @@
                       <font name="Consolas" size="14"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="(200€)"/>
                       <verticalAlignment value="0"/>
                     </properties>
                   </component>
+                  <hspacer id="63b09">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
                 </children>
               </grid>
               <grid id="76c55" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -2651,10 +2671,10 @@
                 </border>
                 <children/>
               </grid>
-              <grid id="d6154" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="d6154" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2667,7 +2687,7 @@
                 <children>
                   <component id="474da" class="javax.swing.JLabel" binding="lbNStreet32">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -2677,7 +2697,7 @@
                       <font name="Consolas" size="10"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
                     </properties>
                   </component>
@@ -2685,7 +2705,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="8a80b" binding="Street34" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="8a80b" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="4" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2703,10 +2723,10 @@
               <color color="-16777216"/>
             </border>
             <children>
-              <grid id="9e8eb" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="9e8eb" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2729,17 +2749,22 @@
                       <font name="Consolas" size="14"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="(200€)"/>
                       <verticalAlignment value="0"/>
                     </properties>
                   </component>
+                  <hspacer id="99fae">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
                 </children>
               </grid>
               <grid id="c1d99" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
+                  <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="30" height="75"/>
                     <preferred-size width="30" height="75"/>
                     <maximum-size width="35" height="95"/>
@@ -2753,10 +2778,10 @@
                 </border>
                 <children/>
               </grid>
-              <grid id="b207e" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="b207e" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2769,7 +2794,7 @@
                 <children>
                   <component id="f6a84" class="javax.swing.JLabel" binding="lbNStreet34">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -2779,7 +2804,7 @@
                       <font name="Consolas" size="10"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
                     </properties>
                   </component>
@@ -2787,7 +2812,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="75b35" binding="Street39" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="75b35" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="9" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2805,10 +2830,10 @@
               <color color="-16777216"/>
             </border>
             <children>
-              <grid id="fc415" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="fc415" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2831,11 +2856,16 @@
                       <font name="Consolas" size="14"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="(200€)"/>
                       <verticalAlignment value="0"/>
                     </properties>
                   </component>
+                  <hspacer id="ae80c">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
                 </children>
               </grid>
               <grid id="a6282" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -2855,10 +2885,10 @@
                 </border>
                 <children/>
               </grid>
-              <grid id="517df" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="517df" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2871,7 +2901,7 @@
                 <children>
                   <component id="5cf3b" class="javax.swing.JLabel" binding="lbNStreet39">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -2885,11 +2915,16 @@
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
                     </properties>
                   </component>
+                  <hspacer id="f880b">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
                 </children>
               </grid>
             </children>
           </grid>
-          <grid id="fc729" binding="Street37" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="fc729" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="7" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -2907,10 +2942,10 @@
               <color color="-16777216"/>
             </border>
             <children>
-              <grid id="8245" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="8245" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="4" fill="2" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2933,11 +2968,16 @@
                       <font name="Consolas" size="14"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="(200€)"/>
                       <verticalAlignment value="0"/>
                     </properties>
                   </component>
+                  <hspacer id="b32a3">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
                 </children>
               </grid>
               <grid id="ca334" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -2957,10 +2997,10 @@
                 </border>
                 <children/>
               </grid>
-              <grid id="9b4d7" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="9b4d7" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -2973,7 +3013,7 @@
                 <children>
                   <component id="7e9ce" class="javax.swing.JLabel" binding="lbNStreet37">
                     <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
                         <minimum-size width="75" height="20"/>
                         <preferred-size width="75" height="20"/>
                         <maximum-size width="95" height="20"/>
@@ -2983,15 +3023,20 @@
                       <font name="Consolas" size="10"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
                     </properties>
                   </component>
+                  <hspacer id="abce">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
                 </children>
               </grid>
             </children>
           </grid>
-          <grid id="906fe" binding="Street35" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="906fe" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="5" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -3009,45 +3054,27 @@
               <color color="-16777216"/>
             </border>
             <children>
-              <grid id="93462" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                <margin top="5" left="5" bottom="5" right="5"/>
+              <component id="84b08" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="6" fill="0" indent="0" use-parent-layout="false">
-                    <minimum-size width="75" height="35"/>
-                    <preferred-size width="75" height="35"/>
-                    <maximum-size width="95" height="35"/>
+                  <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="75" height="75"/>
+                    <preferred-size width="75" height="75"/>
+                    <maximum-size width="95" height="95"/>
                   </grid>
                 </constraints>
                 <properties>
-                  <background color="-3090471"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <icon value="Sprites/station_icon3.png"/>
+                  <text value=""/>
                 </properties>
-                <border type="none"/>
-                <children>
-                  <component id="ad75a" class="javax.swing.JLabel" binding="lbPStreet35">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="false">
-                        <minimum-size width="75" height="15"/>
-                        <preferred-size width="75" height="15"/>
-                        <maximum-size width="95" height="15"/>
-                      </grid>
-                    </constraints>
-                    <properties>
-                      <font name="Consolas" size="14"/>
-                      <foreground color="-14013910"/>
-                      <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
-                      <text value="(200€)"/>
-                      <verticalAlignment value="0"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-              <grid id="aa506" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              </component>
+              <grid id="aa506" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="1" row-span="2" col-span="4" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
-                    <preferred-size width="75" height="35"/>
+                    <preferred-size width="63" height="35"/>
                     <maximum-size width="95" height="35"/>
                   </grid>
                 </constraints>
@@ -3068,30 +3095,49 @@
                       <font name="Consolas" size="10"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
                     </properties>
                   </component>
                 </children>
               </grid>
-              <component id="84b08" class="javax.swing.JLabel">
+              <grid id="93462" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                    <minimum-size width="75" height="75"/>
-                    <preferred-size width="75" height="75"/>
-                    <maximum-size width="95" height="95"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="6" fill="0" indent="0" use-parent-layout="true">
+                    <minimum-size width="75" height="35"/>
+                    <preferred-size width="63" height="35"/>
+                    <maximum-size width="95" height="35"/>
                   </grid>
                 </constraints>
                 <properties>
-                  <horizontalAlignment value="0"/>
-                  <horizontalTextPosition value="0"/>
-                  <icon value="Sprites/station_icon3.png"/>
-                  <text value=""/>
+                  <background color="-3090471"/>
                 </properties>
-              </component>
+                <border type="none"/>
+                <children>
+                  <component id="ad75a" class="javax.swing.JLabel" binding="lbPStreet35">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="10" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="15"/>
+                        <preferred-size width="75" height="15"/>
+                        <maximum-size width="95" height="15"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Consolas" size="14"/>
+                      <foreground color="-14013910"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="(200€)"/>
+                      <verticalAlignment value="3"/>
+                      <verticalTextPosition value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
             </children>
           </grid>
-          <grid id="28fed" binding="Street38" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="28fed" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="8" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -3112,7 +3158,7 @@
               <grid id="45dca" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="6" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="2" hsize-policy="2" anchor="6" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -3135,17 +3181,17 @@
                       <font name="Consolas" size="14"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="(200€)"/>
                       <verticalAlignment value="0"/>
                     </properties>
                   </component>
                 </children>
               </grid>
-              <grid id="9ca5f" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="9ca5f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="5" left="5" bottom="5" right="5"/>
                 <constraints>
-                  <grid row="0" column="0" row-span="2" col-span="4" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="2" col-span="4" vsize-policy="2" hsize-policy="2" anchor="5" fill="0" indent="0" use-parent-layout="true">
                     <minimum-size width="75" height="35"/>
                     <preferred-size width="75" height="35"/>
                     <maximum-size width="95" height="35"/>
@@ -3168,7 +3214,7 @@
                       <font name="Consolas" size="10"/>
                       <foreground color="-14013910"/>
                       <horizontalAlignment value="0"/>
-                      <horizontalTextPosition value="4"/>
+                      <horizontalTextPosition value="0"/>
                       <text value="&lt;html&gt;Baltic&lt;br&gt;Avenue&lt;/html&gt;"/>
                     </properties>
                   </component>
@@ -3176,7 +3222,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="4f2d3" binding="Street36" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="4f2d3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="6" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -3207,7 +3253,7 @@
               </component>
             </children>
           </grid>
-          <grid id="325ba" binding="Street0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="325ba" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="10" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -3242,7 +3288,7 @@
               </component>
             </children>
           </grid>
-          <grid id="d4cb0" binding="Street33" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+          <grid id="d4cb0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="3" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false">
@@ -3286,6 +3332,56 @@
           </component>
         </children>
       </grid>
+      <hspacer id="e946">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="5" height="-1"/>
+            <preferred-size width="5" height="-1"/>
+            <maximum-size width="15" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="815e7">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="75"/>
+            <preferred-size width="150" height="75"/>
+            <maximum-size width="170" height="95"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="383c7">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="5" height="-1"/>
+            <maximum-size width="15" height="-1"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="9796c">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="5" height="-1"/>
+            <maximum-size width="15" height="-1"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="9c2a4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="adcf3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

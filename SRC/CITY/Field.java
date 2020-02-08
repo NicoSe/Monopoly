@@ -4,11 +4,14 @@ import LOGIC.Player;
 
 public class Field {
 
-    private String name = null;
+    protected String name = null;
+    protected int prize;
 
     public String getName(){
         return name;
     }
+
+    public String getPrize() { return prize + "€"; }
 
     //execute the spezific action an the player who moved, e.g. buy a street
     public void action(Player player){

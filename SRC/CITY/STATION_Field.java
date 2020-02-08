@@ -6,20 +6,18 @@ import java.awt.*;
 
 public class STATION_Field extends Field implements Streets{
 
-    private String name;
     private Player owner;
     private Color color;
-    private double prize;
-    private double hypothek;
+    private int hypothek;
     private int streetCounter;
     private boolean isHypothek = false;
-    private double house1fee;
-    private double house2fee;
-    private double house3fee;
-    private double house4fee;
+    private int house1fee;
+    private int house2fee;
+    private int house3fee;
+    private int house4fee;
 
-    public STATION_Field(String Name, double Prize, int StreetCounter, double Hypothek, Color Color,
-                        double House1fee, double House2fee, double House3fee, double House4fee){
+    public STATION_Field(String Name, int Prize, int StreetCounter, int Hypothek, Color Color,
+                        int House1fee, int House2fee, int House3fee, int House4fee){
         name = Name;
         owner = null;
         prize = Prize;
@@ -51,14 +49,10 @@ public class STATION_Field extends Field implements Streets{
     }
 
     @Override
-    public double getHypothek(){
+    public int getHypothek(){
         return hypothek;
     }
 
-    @Override
-    public double getPrize(){
-        return prize;
-    }
 
     @Override
     public Color getColor(){
@@ -79,7 +73,7 @@ public class STATION_Field extends Field implements Streets{
     @Override
     public boolean payTax(Player player){
         if(owner != null){
-            double payAmount = 0;
+            int payAmount = 0;
             int counter = 0;
             for(int i=0; i<owner.ownStreets.size(); i++){
                 if(owner.ownStreets.get(i).getColor() == color) counter++;
@@ -98,11 +92,6 @@ public class STATION_Field extends Field implements Streets{
             }
         }
         return false;
-    }
-
-    @Override
-    public String getName() {
-        return name;
     }
 
     @Override

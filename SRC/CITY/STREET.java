@@ -5,26 +5,24 @@ import LOGIC.Player;
 import java.awt.*;
 
 public class STREET extends Field implements Streets{
-
-    private String name;
+    
     private Player owner;
     private Color color;
-    private double prize;
-    private double hypothek;
+    private int hypothek;
     private int streetCounter;
     private boolean isHypothek = false;
-    private double housePrize;
+    private int housePrize;
     private int houses;
     private int hotels;
-    private double fee;
-    private double house1fee;
-    private double house2fee;
-    private double house3fee;
-    private double house4fee;
-    private double hotelfee;
+    private int fee;
+    private int house1fee;
+    private int house2fee;
+    private int house3fee;
+    private int house4fee;
+    private int hotelfee;
 
-    public STREET(String Name, double Prize, int StreetCounter, double Hypothek, Color Color, double HousePrize,
-                      double Fee, double House1fee, double House2fee, double House3fee, double House4fee, double Hotelfee){
+    public STREET(String Name, int Prize, int StreetCounter, int Hypothek, Color Color, int HousePrize,
+                      int Fee, int House1fee, int House2fee, int House3fee, int House4fee, int Hotelfee){
         name = Name;
         owner = null;
         prize = Prize;
@@ -60,13 +58,8 @@ public class STREET extends Field implements Streets{
     }
 
     @Override
-    public double getHypothek(){
+    public int getHypothek(){
         return hypothek;
-    }
-
-    @Override
-    public double getPrize(){
-        return prize;
     }
 
     @Override
@@ -88,7 +81,7 @@ public class STREET extends Field implements Streets{
     @Override
     public boolean payTax(Player player){
         if(owner != null){
-            double payAmount = 0;
+            int payAmount = 0;
             switch (houses){
                 case 0: {
                     if(owner.allStreets(color, streetCounter)) payAmount += fee * 2;
@@ -111,10 +104,6 @@ public class STREET extends Field implements Streets{
         return false;
     }
 
-    @Override
-    public String getName() {
-        return name;
-    }
 
     @Override
     public void action(Player player) {

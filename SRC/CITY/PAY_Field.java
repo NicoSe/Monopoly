@@ -4,12 +4,12 @@ import LOGIC.Player;
 
 public class PAY_Field extends Field {
 
-    private double payAmount;
-    private String name;
+    private int payAmount;
 
-    public PAY_Field(String Name, double PayAmount){
+    public PAY_Field(String Name, int PayAmount){
         name = Name;
         payAmount = PayAmount;
+        prize = PayAmount;
     }
 
     @Override
@@ -17,11 +17,7 @@ public class PAY_Field extends Field {
         player.changeMoney(payAmount, false);
     }
 
-    public String getName(){
-        return name;
-    }
-
-    public double getPayAmount(){
-        return payAmount;
+    public String getPayAmount(){
+        return Integer.toString(payAmount);
     }
 }

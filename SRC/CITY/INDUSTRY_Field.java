@@ -7,16 +7,14 @@ import java.awt.*;
 
 public class INDUSTRY_Field extends Field implements Streets {
 
-    private String name;
     private Player owner;
     private Color color;
-    private double prize;
-    private double hypothek;
+    private int hypothek;
     private int streetCounter;
     private boolean isHypothek = false;
 
 
-    public INDUSTRY_Field(String Name, double Prize, int StreetCounter, double Hypothek, Color Color){
+    public INDUSTRY_Field(String Name, int Prize, int StreetCounter, int Hypothek, Color Color){
         name = Name;
         owner = null;
         prize = Prize;
@@ -44,14 +42,10 @@ public class INDUSTRY_Field extends Field implements Streets {
     }
 
     @Override
-    public double getHypothek(){
+    public int getHypothek(){
         return hypothek;
     }
 
-    @Override
-    public double getPrize(){
-        return prize;
-    }
 
     @Override
     public Color getColor(){
@@ -89,11 +83,6 @@ public class INDUSTRY_Field extends Field implements Streets {
             }
         }
         return false;
-    }
-
-    @Override
-    public String getName() {
-        return name;
     }
 
     @Override

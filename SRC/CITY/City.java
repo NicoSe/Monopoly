@@ -27,10 +27,6 @@ public class City {
         loadCity();
     }
 
-    public Field getField(int pos){
-        return field[pos];
-    }
-
     public boolean loadCity(){
         if(!loadIndustry()) return false;
         if(!loadStations()) return false;
@@ -67,9 +63,9 @@ public class City {
                     default:
                         return false;
                 }
-                field[i] = new STREET(e[0], Double.parseDouble(e[1]), Integer.parseInt(e[2]), Double.parseDouble(e[3]), c,
-                        Double.parseDouble(e[5]), Double.parseDouble(e[6]), Double.parseDouble(e[7]), Double.parseDouble(e[8]),
-                        Double.parseDouble(e[9]), Double.parseDouble(e[10]), Double.parseDouble(e[11]));
+                field[i] = new STREET(e[0], Integer.parseInt(e[1]), Integer.parseInt(e[2]), Integer.parseInt(e[3]), c,
+                        Integer.parseInt(e[5]), Integer.parseInt(e[6]), Integer.parseInt(e[7]), Integer.parseInt(e[8]),
+                        Integer.parseInt(e[9]), Integer.parseInt(e[10]), Integer.parseInt(e[11]));
             }
         } catch (IOException e) {
             return false;
@@ -88,23 +84,23 @@ public class City {
 
             String line = r.readLine();
             String[] e = line.split(",");
-            field[5] = new STATION_Field(e[0], Double.parseDouble(e[1]), Integer.parseInt(e[2]), Double.parseDouble(e[3]), Color.WHITE,
-                     Double.parseDouble(e[5]), Double.parseDouble(e[6]), Double.parseDouble(e[7]), Double.parseDouble(e[8]));
+            field[5] = new STATION_Field(e[0], Integer.parseInt(e[1]), Integer.parseInt(e[2]), Integer.parseInt(e[3]), Color.WHITE,
+                     Integer.parseInt(e[5]), Integer.parseInt(e[6]), Integer.parseInt(e[7]), Integer.parseInt(e[8]));
 
             line = r.readLine();
             e = line.split(",");
-            field[15] = new STATION_Field(e[0], Double.parseDouble(e[1]), Integer.parseInt(e[2]), Double.parseDouble(e[3]), Color.WHITE,
-                     Double.parseDouble(e[5]), Double.parseDouble(e[6]), Double.parseDouble(e[7]), Double.parseDouble(e[8]));
+            field[15] = new STATION_Field(e[0], Integer.parseInt(e[1]), Integer.parseInt(e[2]), Integer.parseInt(e[3]), Color.WHITE,
+                     Integer.parseInt(e[5]), Integer.parseInt(e[6]), Integer.parseInt(e[7]), Integer.parseInt(e[8]));
 
             line = r.readLine();
             e = line.split(",");
-            field[25] = new STATION_Field(e[0], Double.parseDouble(e[1]), Integer.parseInt(e[2]), Double.parseDouble(e[3]), Color.WHITE,
-                    Double.parseDouble(e[5]), Double.parseDouble(e[6]), Double.parseDouble(e[7]), Double.parseDouble(e[8]));
+            field[25] = new STATION_Field(e[0], Integer.parseInt(e[1]), Integer.parseInt(e[2]), Integer.parseInt(e[3]), Color.WHITE,
+                    Integer.parseInt(e[5]), Integer.parseInt(e[6]), Integer.parseInt(e[7]), Integer.parseInt(e[8]));
 
             line = r.readLine();
             e = line.split(",");
-            field[35] = new STATION_Field(e[0], Double.parseDouble(e[1]), Integer.parseInt(e[2]), Double.parseDouble(e[3]), Color.WHITE,
-                    Double.parseDouble(e[5]), Double.parseDouble(e[6]), Double.parseDouble(e[7]), Double.parseDouble(e[8]));
+            field[35] = new STATION_Field(e[0], Integer.parseInt(e[1]), Integer.parseInt(e[2]), Integer.parseInt(e[3]), Color.WHITE,
+                    Integer.parseInt(e[5]), Integer.parseInt(e[6]), Integer.parseInt(e[7]), Integer.parseInt(e[8]));
         } catch (IOException e) {
             return false;
         }
@@ -122,11 +118,11 @@ public class City {
             r.readLine();
             String line = r.readLine();
             String[] e = line.split(",");
-            field[12] = new INDUSTRY_Field(e[0], Double.parseDouble(e[1]), Integer.parseInt(e[2]), Double.parseDouble(e[3]), Color.GRAY);
+            field[12] = new INDUSTRY_Field(e[0], Integer.parseInt(e[1]), Integer.parseInt(e[2]), Integer.parseInt(e[3]), Color.GRAY);
 
             line = r.readLine();
             e = line.split(",");
-            field[28] = new INDUSTRY_Field(e[0], Double.parseDouble(e[1]), Integer.parseInt(e[2]), Double.parseDouble(e[3]), Color.GRAY);
+            field[28] = new INDUSTRY_Field(e[0], Integer.parseInt(e[1]), Integer.parseInt(e[2]), Integer.parseInt(e[3]), Color.GRAY);
         } catch (IOException e) {
             return false;
         }
