@@ -34,7 +34,10 @@ public class HomeUI {
         OPTIONSButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                Main.getJFrame().setContentPane(new GameUI().init());
+                Main.getBackgroundPanel().removeAll();
+                Main.getBackgroundPanel().add(new OptionsUI().init());
+                Main.getJFrame().revalidate();
+                Main.getJFrame().repaint();
             }
         });
         EXITButton.addMouseListener(new MouseAdapter() {

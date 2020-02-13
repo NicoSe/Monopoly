@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.GameOptionsUI">
-  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="3324" height="1011"/>
+      <xy x="20" y="20" width="3324" height="1021"/>
     </constraints>
     <properties>
       <background color="-12746021"/>
@@ -14,7 +14,7 @@
     <children>
       <component id="1bf44" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font size="20"/>
@@ -27,7 +27,7 @@
       <grid id="3df98" layout-manager="GridLayoutManager" row-count="17" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="true">
             <minimum-size width="300" height="750"/>
             <preferred-size width="300" height="750"/>
             <maximum-size width="300" height="750"/>
@@ -46,7 +46,7 @@
             <properties>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Players"/>
+              <text value="PLAYER"/>
             </properties>
           </component>
           <component id="8c853" class="javax.swing.JSlider" binding="slider1" default-binding="true">
@@ -86,7 +86,7 @@
             <properties>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="KI Player"/>
+              <text value="KI PLAYER"/>
             </properties>
           </component>
           <component id="f73ad" class="javax.swing.JSlider" binding="slider2" default-binding="true">
@@ -133,7 +133,7 @@
             <properties>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="Occurency"/>
+              <text value="OCCURENCY"/>
             </properties>
           </component>
           <component id="3cf4" class="javax.swing.JRadioButton" binding="DOLLARradio">
@@ -270,12 +270,12 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Start Game"/>
+          <text value="START GAME"/>
         </properties>
       </component>
       <hspacer id="5e1d0">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="1150" height="10"/>
             <preferred-size width="1150" height="10"/>
             <maximum-size width="1150" height="10"/>
@@ -284,7 +284,7 @@
       </hspacer>
       <hspacer id="47219">
         <constraints>
-          <grid row="4" column="1" row-span="3" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="2" row-span="3" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="1150" height="10"/>
             <preferred-size width="1150" height="10"/>
             <maximum-size width="1150" height="10"/>
@@ -293,7 +293,7 @@
       </hspacer>
       <vspacer id="76b1e">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="50"/>
             <preferred-size width="-1" height="50"/>
             <maximum-size width="-1" height="50"/>
@@ -302,7 +302,7 @@
       </vspacer>
       <vspacer id="95e51">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="50"/>
             <preferred-size width="-1" height="50"/>
             <maximum-size width="-1" height="50"/>
@@ -311,7 +311,7 @@
       </vspacer>
       <vspacer id="46805">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="50"/>
             <preferred-size width="-1" height="50"/>
             <maximum-size width="-1" height="50"/>
@@ -320,13 +320,25 @@
       </vspacer>
       <vspacer id="eb7dd">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="50"/>
             <preferred-size width="-1" height="50"/>
             <maximum-size width="-1" height="50"/>
           </grid>
         </constraints>
       </vspacer>
+      <component id="76c4d" class="javax.swing.JButton" binding="BACKButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="20"/>
+            <preferred-size width="100" height="20"/>
+            <maximum-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="BACK"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

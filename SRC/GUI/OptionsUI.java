@@ -12,27 +12,24 @@ import javax.swing.event.ChangeListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class GameOptionsUI {
-    private JPanel MainPanel;
-    private JSlider slider1;
-    private JSlider slider2;
-    private JRadioButton BTCradio;
-    private JButton startGameButton;
-    private JRadioButton YENradio;
-    private JRadioButton EUROradio;
+public class OptionsUI {
     private JRadioButton DOLLARradio;
+    private JRadioButton EUROradio;
+    private JRadioButton YENradio;
+    private JRadioButton BTCradio;
     private JRadioButton Kradio;
     private JRadioButton MIOradio;
     private JRadioButton MRDradio;
-    private JButton BACKButton;
+    private JSlider slider1;
+    private JPanel MainPanel;
+    private JButton SAVECHANGESButton;
 
-    public GameOptionsUI() {
+    public OptionsUI() {
         slider1.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
-                int playerCount = slider1.getValue();
-                slider2.setMaximum(6 - playerCount);
-                slider2.setValue(0);
+                //TODO: update music
+                Options.volume = slider1.getValue();
             }
         });
         DOLLARradio.addMouseListener(new MouseAdapter() {
@@ -42,6 +39,7 @@ public class GameOptionsUI {
                 EUROradio.setSelected(false);
                 YENradio.setSelected(false);
                 BTCradio.setSelected(false);
+                Options.occurency = Occurency.$;
             }
         });
         EUROradio.addMouseListener(new MouseAdapter() {
@@ -51,6 +49,7 @@ public class GameOptionsUI {
                 EUROradio.setSelected(true);
                 YENradio.setSelected(false);
                 BTCradio.setSelected(false);
+                Options.occurency = Occurency.€;
             }
         });
         YENradio.addMouseListener(new MouseAdapter() {
@@ -60,6 +59,7 @@ public class GameOptionsUI {
                 EUROradio.setSelected(false);
                 YENradio.setSelected(true);
                 BTCradio.setSelected(false);
+                Options.occurency = Occurency.¥;
             }
         });
         BTCradio.addMouseListener(new MouseAdapter() {
@@ -69,6 +69,7 @@ public class GameOptionsUI {
                 EUROradio.setSelected(false);
                 YENradio.setSelected(false);
                 BTCradio.setSelected(true);
+                Options.occurency = Occurency.Ƀ;
             }
         });
 
@@ -78,6 +79,7 @@ public class GameOptionsUI {
                 Kradio.setSelected(true);
                 MIOradio.setSelected(false);
                 MRDradio.setSelected(false);
+                Options.moneySpecifier = MoneySpecifier.K;
             }
         });
         MIOradio.addMouseListener(new MouseAdapter() {
@@ -86,6 +88,7 @@ public class GameOptionsUI {
                 Kradio.setSelected(false);
                 MIOradio.setSelected(true);
                 MRDradio.setSelected(false);
+                Options.moneySpecifier = MoneySpecifier.Mio;
             }
         });
         MRDradio.addMouseListener(new MouseAdapter() {
@@ -94,23 +97,14 @@ public class GameOptionsUI {
                 Kradio.setSelected(false);
                 MIOradio.setSelected(false);
                 MRDradio.setSelected(true);
+                Options.moneySpecifier = MoneySpecifier.Mrd;
             }
         });
 
-        startGameButton.addMouseListener(new MouseAdapter() {
+        SAVECHANGESButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                new City();
-                Main.getBackgroundPanel().removeAll();
-                JPanel p = Main.getBackgroundPanel();
-                Main.getBackgroundPanel().add((new GameUI().init()));
-                Main.getJFrame().revalidate();
-                Main.getJFrame().repaint();
-            }
-        });
-        BACKButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
+                Options.saveOptions();
                 Main.getBackgroundPanel().removeAll();
                 Main.getBackgroundPanel().add((new HomeUI().init()));
                 Main.getJFrame().revalidate();
@@ -120,46 +114,44 @@ public class GameOptionsUI {
     }
 
     public JPanel init(){
-        int playerCount = slider1.getValue();
-        slider2.setMaximum(6 - playerCount);
-        slider2.setValue(0);
+        slider1.setValue((int)LOGIC.Options.volume);
 
-        if(Options.occurency == Occurency.$) {
+        if(LOGIC.Options.occurency == Occurency.$) {
             DOLLARradio.setSelected(true);
             EUROradio.setSelected(false);
             YENradio.setSelected(false);
             BTCradio.setSelected(false);
         }
-        else if(Options.occurency == Occurency.€) {
+        else if(LOGIC.Options.occurency == Occurency.€) {
             DOLLARradio.setSelected(false);
             EUROradio.setSelected(true);
             YENradio.setSelected(false);
             BTCradio.setSelected(false);
         }
-        else if(Options.occurency == Occurency.¥) {
+        else if(LOGIC.Options.occurency == Occurency.¥) {
             DOLLARradio.setSelected(false);
             EUROradio.setSelected(false);
             YENradio.setSelected(true);
             BTCradio.setSelected(false);
         }
-        else if(Options.occurency == Occurency.Ƀ) {
+        else if(LOGIC.Options.occurency == Occurency.Ƀ) {
             DOLLARradio.setSelected(false);
             EUROradio.setSelected(false);
             YENradio.setSelected(false);
             BTCradio.setSelected(true);
         }
 
-        if(Options.moneySpecifier == MoneySpecifier.K){
+        if(LOGIC.Options.moneySpecifier == MoneySpecifier.K){
             Kradio.setSelected(true);
             MIOradio.setSelected(false);
             MRDradio.setSelected(false);
         }
-        else if(Options.moneySpecifier == MoneySpecifier.Mio){
+        else if(LOGIC.Options.moneySpecifier == MoneySpecifier.Mio){
             Kradio.setSelected(false);
             MIOradio.setSelected(true);
             MRDradio.setSelected(false);
         }
-        else if(Options.moneySpecifier == MoneySpecifier.Mrd){
+        else if(LOGIC.Options.moneySpecifier == MoneySpecifier.Mrd){
             Kradio.setSelected(false);
             MIOradio.setSelected(false);
             MRDradio.setSelected(true);

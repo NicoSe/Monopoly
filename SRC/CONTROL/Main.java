@@ -1,6 +1,7 @@
 package CONTROL;
 
 import GUI.HomeUI;
+import LOGIC.Options;
 import MISC.BackgroundPanel;
 
 import javax.swing.*;
@@ -12,6 +13,7 @@ public class Main {
     private static BackgroundPanel background;
 
     public static void main(String[] args) {
+        new Options();
         jf = new JFrame("Monopoly");
 
         jf.setSize(1100,800);
@@ -24,7 +26,6 @@ public class Main {
         background.add(new HomeUI().init());
         jf.add(background);
         jf.setBackground(new Color(61,130,219));
-
         jf.setVisible(true);
     }
 

@@ -1,5 +1,6 @@
 package CITY;
 
+import LOGIC.Options;
 import LOGIC.Player;
 
 public class Field {
@@ -11,7 +12,7 @@ public class Field {
         return name;
     }
 
-    public String getPrize() { return prize + "€"; }
+    public String getPrize() { return prize +""+ Options.moneySpecifier + Options.occurency; }
 
     //execute the spezific action an the player who moved, e.g. buy a street
     public void action(Player player){
