@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.GameOptionsUI">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="3324" height="1011"/>
+    </constraints>
+    <properties>
+      <background color="-12746021"/>
+      <enabled value="true"/>
+      <opaque value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="1bf44" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="20"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <opaque value="false"/>
+          <text value="NEW GAME"/>
+        </properties>
+      </component>
+      <grid id="3df98" layout-manager="GridLayoutManager" row-count="17" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="750"/>
+            <preferred-size width="300" height="750"/>
+            <maximum-size width="300" height="750"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="daf5c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Players"/>
+            </properties>
+          </component>
+          <component id="8c853" class="javax.swing.JSlider" binding="slider1" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="250" height="20"/>
+                <preferred-size width="300" height="20"/>
+                <maximum-size width="400" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <maximum value="6"/>
+              <minimum value="1"/>
+              <minorTickSpacing value="1"/>
+              <opaque value="false"/>
+              <paintLabels value="true"/>
+              <paintTicks value="true"/>
+              <paintTrack value="true"/>
+              <snapToTicks value="true"/>
+              <value value="2"/>
+              <valueIsAdjusting value="true"/>
+            </properties>
+          </component>
+          <vspacer id="3bce0">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="10" height="10"/>
+                <preferred-size width="10" height="10"/>
+                <maximum-size width="10" height="50"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="dc281" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="KI Player"/>
+            </properties>
+          </component>
+          <component id="f73ad" class="javax.swing.JSlider" binding="slider2" default-binding="true">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="250" height="20"/>
+                <preferred-size width="300" height="20"/>
+                <maximum-size width="400" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <maximum value="5"/>
+              <minorTickSpacing value="1"/>
+              <opaque value="false"/>
+              <paintLabels value="true"/>
+              <paintTicks value="true"/>
+              <snapToTicks value="true"/>
+              <value value="1"/>
+              <valueIsAdjusting value="true"/>
+            </properties>
+          </component>
+          <vspacer id="4f669">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="10" height="10"/>
+                <preferred-size width="10" height="10"/>
+                <maximum-size width="10" height="50"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <vspacer id="26114">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="10" height="10"/>
+                <preferred-size width="10" height="10"/>
+                <maximum-size width="10" height="50"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="accc" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Occurency"/>
+            </properties>
+          </component>
+          <component id="3cf4" class="javax.swing.JRadioButton" binding="DOLLARradio">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <label value="$"/>
+              <opaque value="false"/>
+              <selected value="true"/>
+              <text value="$"/>
+            </properties>
+          </component>
+          <component id="ee349" class="javax.swing.JRadioButton" binding="EUROradio">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <label value="€"/>
+              <opaque value="false"/>
+              <selected value="false"/>
+              <text value="€"/>
+            </properties>
+          </component>
+          <component id="63188" class="javax.swing.JRadioButton" binding="YENradio">
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <label value="¥"/>
+              <opaque value="false"/>
+              <selected value="false"/>
+              <text value="¥"/>
+            </properties>
+          </component>
+          <component id="2a0dd" class="javax.swing.JRadioButton" binding="BTCradio">
+            <constraints>
+              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <label value="Ƀ"/>
+              <opaque value="false"/>
+              <selected value="false"/>
+              <text value="Ƀ"/>
+            </properties>
+          </component>
+          <vspacer id="6bcfa">
+            <constraints>
+              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="10" height="10"/>
+                <preferred-size width="10" height="10"/>
+                <maximum-size width="10" height="50"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="893bf" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Values"/>
+            </properties>
+          </component>
+          <component id="8c466" class="javax.swing.JRadioButton" binding="Kradio">
+            <constraints>
+              <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <label value="1 000   "/>
+              <opaque value="false"/>
+              <selected value="false"/>
+              <text value="1 000   "/>
+            </properties>
+          </component>
+          <component id="910b5" class="javax.swing.JRadioButton" binding="MIOradio">
+            <constraints>
+              <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <label value="1 Mio. "/>
+              <opaque value="false"/>
+              <selected value="true"/>
+              <text value="1 Mio. "/>
+            </properties>
+          </component>
+          <component id="466ef" class="javax.swing.JRadioButton" binding="MRDradio">
+            <constraints>
+              <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <borderPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="4"/>
+              <label value="1 Mrd."/>
+              <opaque value="false"/>
+              <selected value="false"/>
+              <text value="1 Mrd."/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="5315e" class="javax.swing.JButton" binding="startGameButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="20"/>
+            <preferred-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Start Game"/>
+        </properties>
+      </component>
+      <hspacer id="5e1d0">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1150" height="10"/>
+            <preferred-size width="1150" height="10"/>
+            <maximum-size width="1150" height="10"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="47219">
+        <constraints>
+          <grid row="4" column="1" row-span="3" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="1150" height="10"/>
+            <preferred-size width="1150" height="10"/>
+            <maximum-size width="1150" height="10"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="76b1e">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="50"/>
+            <preferred-size width="-1" height="50"/>
+            <maximum-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="95e51">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="50"/>
+            <preferred-size width="-1" height="50"/>
+            <maximum-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="46805">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="50"/>
+            <preferred-size width="-1" height="50"/>
+            <maximum-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="eb7dd">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="50"/>
+            <preferred-size width="-1" height="50"/>
+            <maximum-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
