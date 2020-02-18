@@ -5,7 +5,6 @@ import LOGIC.Options;
 import MISC.BackgroundPanel;
 
 import javax.swing.*;
-import javax.swing.text.LayeredHighlighter;
 import java.awt.*;
 
 public class Main {
@@ -23,20 +22,12 @@ public class Main {
         jf.setLocationRelativeTo(null);
         jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         jf.setBackground(new Color(61,130,219));
-        jf.setVisible(true);
 
         background = new BackgroundPanel();
-        background.setBounds(0,0,1920,1080);
-        //background.add(new HomeUI().init());
+        background.add(new HomeUI().init());
 
-        JLayeredPane l = jf.getLayeredPane();
-
-        l.setLayout(null);
-
-        l.add(background,JLayeredPane.FRAME_CONTENT_LAYER);
-        //l.add(new HomeUI().init(), JLayeredPane.DEFAULT_LAYER);
-
-
+        jf.add(background);
+        jf.setVisible(true);
     }
 
     public static JFrame getJFrame(){

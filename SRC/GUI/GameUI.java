@@ -3,6 +3,7 @@ package GUI;
 import CITY.City;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class GameUI {
 
@@ -132,6 +133,7 @@ public class GameUI {
         lbNStreet39.setText(City.field[39].getName());
         lbPStreet39.setText(City.field[39].getPrize());
 
+        MainPanel.setBounds(0,0,1920,1080);
         return MainPanel;
     }
 }

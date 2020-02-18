@@ -5,10 +5,12 @@ import CONTROL.Main;
 import LOGIC.MoneySpecifier;
 import LOGIC.Occurency;
 import LOGIC.Options;
+import MISC.BackgroundPanel;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -101,9 +103,12 @@ public class GameOptionsUI {
             @Override
             public void mouseClicked(MouseEvent e) {
                 new City();
-                Main.getBackgroundPanel().removeAll();
-                JPanel p = Main.getBackgroundPanel();
-                Main.getBackgroundPanel().add((new GameUI().init()));
+                Main.getJFrame().remove(Main.getBackgroundPanel());
+                JLayeredPane layeredPane = Main.getJFrame().getLayeredPane();
+                layeredPane.setLayout(new GridBagLayout());
+                layeredPane.setSize(1920,1080);
+                layeredPane.add(new GameUI().init(),-300);
+                layeredPane.add(new JLabel(),0);
                 Main.getJFrame().revalidate();
                 Main.getJFrame().repaint();
             }
