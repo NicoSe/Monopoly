@@ -50,7 +50,7 @@ public class HomeUI {
 
     public JPanel init() {
         MainPanel.setOpaque(false);
-        MainPanel.setBounds(0,0,1920,1080);
+        MainPanel.setBounds(0,0,1920,700);
         return MainPanel;
     }
 }

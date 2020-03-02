@@ -1,16 +1,13 @@
 package GUI;
 
-import CITY.City;
 import CONTROL.Main;
 import LOGIC.MoneySpecifier;
 import LOGIC.Occurency;
 import LOGIC.Options;
-import MISC.BackgroundPanel;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -19,7 +16,7 @@ public class GameOptionsUI {
     private JSlider slider1;
     private JSlider slider2;
     private JRadioButton BTCradio;
-    private JButton startGameButton;
+    private JButton ContinueButton;
     private JRadioButton YENradio;
     private JRadioButton EUROradio;
     private JRadioButton DOLLARradio;
@@ -99,16 +96,11 @@ public class GameOptionsUI {
             }
         });
 
-        startGameButton.addMouseListener(new MouseAdapter() {
+        ContinueButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                new City();
-                Main.getJFrame().remove(Main.getBackgroundPanel());
-                JLayeredPane layeredPane = Main.getJFrame().getLayeredPane();
-                layeredPane.setLayout(new GridBagLayout());
-                layeredPane.setSize(1920,1080);
-                layeredPane.add(new GameUI().init(),-300);
-                layeredPane.add(new JLabel(),0);
+                Main.getBackgroundPanel().removeAll();
+                Main.getBackgroundPanel().add((new GamePlayerManager(slider1.getValue(), slider2.getValue()).init()));
                 Main.getJFrame().revalidate();
                 Main.getJFrame().repaint();
             }
@@ -125,6 +117,7 @@ public class GameOptionsUI {
     }
 
     public JPanel init(){
+        MainPanel.setBounds(240,0,1920,1080);
         int playerCount = slider1.getValue();
         slider2.setMaximum(6 - playerCount);
         slider2.setValue(0);

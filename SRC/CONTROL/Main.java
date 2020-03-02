@@ -2,6 +2,7 @@ package CONTROL;
 
 import GUI.HomeUI;
 import LOGIC.Options;
+import LOGIC.Player;
 import MISC.BackgroundPanel;
 
 import javax.swing.*;
@@ -34,4 +35,10 @@ public class Main {
         return jf;
     }
     public static JPanel getBackgroundPanel(){return background;}
+
+    public static void ExecuteGame() {
+        JLayeredPane layeredPane = jf.getLayeredPane();
+        Player p1 = new Player("Gustav", Color.RED);
+        layeredPane.add(p1.drawPLayer(200,200,30,30),0);
+    }
 }

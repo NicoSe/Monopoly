@@ -23,6 +23,7 @@ public class OptionsUI {
     private JSlider slider1;
     private JPanel MainPanel;
     private JButton SAVECHANGESButton;
+    private JCheckBox RollCheck;
 
     public OptionsUI() {
         slider1.addChangeListener(new ChangeListener() {
@@ -30,6 +31,12 @@ public class OptionsUI {
             public void stateChanged(ChangeEvent e) {
                 //TODO: update music
                 Options.volume = slider1.getValue();
+            }
+        });
+        RollCheck.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent e){
+                Options.rollSelf = !Options.rollSelf;
             }
         });
         DOLLARradio.addMouseListener(new MouseAdapter() {
@@ -114,7 +121,10 @@ public class OptionsUI {
     }
 
     public JPanel init(){
+        MainPanel.setBounds(240,0,1920,1080);
         slider1.setValue((int)LOGIC.Options.volume);
+
+        RollCheck.setSelected(Options.rollSelf);
 
         if(LOGIC.Options.occurency == Occurency.$) {
             DOLLARradio.setSelected(true);

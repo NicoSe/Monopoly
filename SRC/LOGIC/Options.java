@@ -8,10 +8,12 @@ public class Options {
     public static MoneySpecifier moneySpecifier;
     public static Occurency occurency;
     public static int playerAmount;
+    public static boolean rollSelf;
     public static boolean mode3D = false;
 
     public Options(){
         if (!loadOptions()) {
+            rollSelf = false;
             volume = 100;
             occurency = Occurency.$;
             moneySpecifier = MoneySpecifier.Mio;
@@ -27,7 +29,8 @@ public class Options {
             pWriter = new PrintWriter((new BufferedWriter((new FileWriter("./settings.txt")))));
             pWriter.write("Music Volume:\n" + volume + "\n");
             pWriter.write("Occurency:\n" + occurency + "\n");
-            pWriter.write("Specifier:\n" + moneySpecifier);
+            pWriter.write("Specifier:\n" + moneySpecifier + "\n");
+            pWriter.write("Roll for your self:\n" + rollSelf);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -69,6 +72,14 @@ public class Options {
                 case "K": moneySpecifier = MoneySpecifier.K; break;
                 case "Mio": moneySpecifier = MoneySpecifier.Mio; break;
                 case "Mrd": moneySpecifier = MoneySpecifier.Mrd; break;
+                default: return false;
+            }
+
+            in.readLine();
+            loadedValueS = in.readLine();
+            switch (loadedValueS){
+                case "true": rollSelf = true; break;
+                case "false": rollSelf = false; break;
                 default: return false;
             }
         }

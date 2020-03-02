@@ -1,6 +1,8 @@
 Music Volume:
 100.0
 Occurency:
-¥
+$
 Specifier:
 Mio
+Roll for your self:
+false
