@@ -54,7 +54,8 @@
           </grid>
         </constraints>
         <properties>
-          <opaque value="false"/>
+          <background color="-12746021"/>
+          <opaque value="true"/>
         </properties>
         <border type="none"/>
         <children>

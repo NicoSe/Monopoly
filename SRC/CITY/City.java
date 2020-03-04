@@ -6,8 +6,10 @@ import java.nio.charset.StandardCharsets;
 
 public class City {
 
+    // static field, can be seen in any other function to easy change and call values
     public static Field[] field;
 
+    // initialize the whole field, based on the loaded csv data
     public City(){
         field = new Field[40];
 
@@ -27,6 +29,7 @@ public class City {
         loadCity();
     }
 
+    // return true if all fields are loaded correctly
     public boolean loadCity(){
         if(!loadIndustry()) return false;
         if(!loadStations()) return false;
@@ -34,6 +37,7 @@ public class City {
         return true;
     }
 
+    // load all streets from streets.csv
     private boolean loadStreets() {
         try {
             ClassLoader classloader = Thread.currentThread().getContextClassLoader();
@@ -73,6 +77,7 @@ public class City {
         return true;
     }
 
+    // load stations from statons.csv
     private boolean loadStations(){
         if(field[5] != null || field[15] != null || field[25] != null || field[35] != null) return false;
         try {
@@ -107,6 +112,7 @@ public class City {
         return true;
     }
 
+    // load industry from industry.csv
     private boolean loadIndustry(){
         if(field[12] != null || field[28] != null) return false;
         try {

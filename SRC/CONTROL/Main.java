@@ -1,5 +1,6 @@
 package CONTROL;
 
+import CITY.City;
 import GUI.HomeUI;
 import LOGIC.Options;
 import LOGIC.Player;
@@ -7,11 +8,14 @@ import MISC.BackgroundPanel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class Main {
 
     private static JFrame jf;
     private static BackgroundPanel background;
+    public static ArrayList<Player> PLAYER = new ArrayList<Player>();
+    public static Player turn;
 
     public static void main(String[] args) {
         new Options();
@@ -36,9 +40,11 @@ public class Main {
     }
     public static JPanel getBackgroundPanel(){return background;}
 
+    // do all preperations for the game
     public static void ExecuteGame() {
         JLayeredPane layeredPane = jf.getLayeredPane();
-        Player p1 = new Player("Gustav", Color.RED);
-        layeredPane.add(p1.drawPLayer(200,200,30,30),0);
+        for (Player p:PLAYER) {
+            City.field[0].addPlayers(p);
+        }
     }
 }

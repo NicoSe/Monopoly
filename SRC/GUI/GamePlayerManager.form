@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1468" height="1015"/>
+      <xy x="20" y="20" width="1468" height="1040"/>
     </constraints>
     <properties>
       <background color="-12746021"/>
@@ -11,7 +11,7 @@
     </properties>
     <border type="none"/>
     <children>
-      <grid id="742de" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="742de" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -57,7 +57,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="PLAYER 1"/>
+                  <text value=""/>
                 </properties>
               </component>
               <vspacer id="abd9a">
@@ -101,7 +101,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="PLAYER 2"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="7c478" class="javax.swing.JTextField" binding="P2text">
@@ -154,7 +154,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="PLAYER 3"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="6d670" class="javax.swing.JTextField" binding="P3text">
@@ -180,7 +180,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="PLAYER 4"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="c9cc4" class="javax.swing.JTextField" binding="P4text">
@@ -206,7 +206,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="PLAYER 5"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="75900" class="javax.swing.JTextField" binding="P5text">
@@ -225,14 +225,14 @@
                   <editable value="false"/>
                 </properties>
               </component>
-              <component id="6d5b6" class="javax.swing.JLabel" binding="P6Label">
+              <component id="6d5b6" class="javax.swing.JLabel" binding="P6label">
                 <constraints>
                   <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="PLAYER 6"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="f673c" class="javax.swing.JTextField" binding="P6text">
@@ -255,8 +255,8 @@
           </grid>
           <component id="996c" class="javax.swing.JButton" binding="startGameButton" default-binding="true">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                <minimum-size width="100" height="20"/>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="120" height="20"/>
                 <preferred-size width="100" height="20"/>
               </grid>
             </constraints>
@@ -275,7 +275,7 @@
           </hspacer>
           <hspacer id="5d040">
             <constraints>
-              <grid row="4" column="2" row-span="3" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+              <grid row="4" column="2" row-span="4" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <minimum-size width="1150" height="10"/>
                 <preferred-size width="1150" height="10"/>
                 <maximum-size width="1150" height="10"/>
@@ -311,16 +311,27 @@
           </vspacer>
           <vspacer id="ab52e">
             <constraints>
-              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+              <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
                 <minimum-size width="-1" height="50"/>
                 <preferred-size width="-1" height="50"/>
                 <maximum-size width="-1" height="50"/>
               </grid>
             </constraints>
           </vspacer>
+          <component id="7398" class="javax.swing.JLabel" binding="DebugLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-3597773"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value=""/>
+            </properties>
+          </component>
           <component id="33138" class="javax.swing.JButton" binding="BACKButton" default-binding="true">
             <constraints>
-              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
                 <minimum-size width="100" height="20"/>
                 <preferred-size width="100" height="20"/>
                 <maximum-size width="100" height="20"/>

@@ -25,13 +25,31 @@ public class GameOptionsUI {
     private JRadioButton MRDradio;
     private JButton BACKButton;
 
-    public GameOptionsUI() {
+
+    public JPanel init(){
+        MainPanel.setBounds(240,0,1920,1080);
+
+
+        // initialize mouse click
         slider1.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
+                slider1.setToolTipText(String.valueOf(slider1.getValue()));
                 int playerCount = slider1.getValue();
                 slider2.setMaximum(6 - playerCount);
                 slider2.setValue(0);
+                if(slider1.getValue() == 1){
+                    slider2.setMinimum(1);
+                    slider2.setMaximum(5);
+                    slider2.setValue(2);
+                }
+                slider1.setToolTipText(String.valueOf(slider1.getValue()));
+            }
+        });
+        slider2.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                slider2.setToolTipText(String.valueOf(slider2.getValue()));
             }
         });
         DOLLARradio.addMouseListener(new MouseAdapter() {
@@ -114,14 +132,8 @@ public class GameOptionsUI {
                 Main.getJFrame().repaint();
             }
         });
-    }
 
-    public JPanel init(){
-        MainPanel.setBounds(240,0,1920,1080);
-        int playerCount = slider1.getValue();
-        slider2.setMaximum(6 - playerCount);
-        slider2.setValue(0);
-
+        // initialize default values
         if(Options.occurency == Occurency.$) {
             DOLLARradio.setSelected(true);
             EUROradio.setSelected(false);

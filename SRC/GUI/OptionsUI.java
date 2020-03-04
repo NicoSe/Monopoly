@@ -1,6 +1,5 @@
 package GUI;
 
-import CITY.City;
 import CONTROL.Main;
 import LOGIC.MoneySpecifier;
 import LOGIC.Occurency;
@@ -25,7 +24,56 @@ public class OptionsUI {
     private JButton SAVECHANGESButton;
     private JCheckBox RollCheck;
 
-    public OptionsUI() {
+    public JPanel init(){
+        MainPanel.setBounds(240,0,1920,1080);
+
+        // default values
+        slider1.setValue((int)LOGIC.Options.volume);
+
+        RollCheck.setSelected(Options.rollSelf);
+
+        if(LOGIC.Options.occurency == Occurency.$) {
+            DOLLARradio.setSelected(true);
+            EUROradio.setSelected(false);
+            YENradio.setSelected(false);
+            BTCradio.setSelected(false);
+        }
+        else if(LOGIC.Options.occurency == Occurency.€) {
+            DOLLARradio.setSelected(false);
+            EUROradio.setSelected(true);
+            YENradio.setSelected(false);
+            BTCradio.setSelected(false);
+        }
+        else if(LOGIC.Options.occurency == Occurency.¥) {
+            DOLLARradio.setSelected(false);
+            EUROradio.setSelected(false);
+            YENradio.setSelected(true);
+            BTCradio.setSelected(false);
+        }
+        else if(LOGIC.Options.occurency == Occurency.Ƀ) {
+            DOLLARradio.setSelected(false);
+            EUROradio.setSelected(false);
+            YENradio.setSelected(false);
+            BTCradio.setSelected(true);
+        }
+
+        if(LOGIC.Options.moneySpecifier == MoneySpecifier.K){
+            Kradio.setSelected(true);
+            MIOradio.setSelected(false);
+            MRDradio.setSelected(false);
+        }
+        else if(LOGIC.Options.moneySpecifier == MoneySpecifier.Mio){
+            Kradio.setSelected(false);
+            MIOradio.setSelected(true);
+            MRDradio.setSelected(false);
+        }
+        else if(LOGIC.Options.moneySpecifier == MoneySpecifier.Mrd){
+            Kradio.setSelected(false);
+            MIOradio.setSelected(false);
+            MRDradio.setSelected(true);
+        }
+
+        // action listener
         slider1.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
@@ -118,53 +166,5 @@ public class OptionsUI {
                 Main.getJFrame().repaint();
             }
         });
-    }
-
-    public JPanel init(){
-        MainPanel.setBounds(240,0,1920,1080);
-        slider1.setValue((int)LOGIC.Options.volume);
-
-        RollCheck.setSelected(Options.rollSelf);
-
-        if(LOGIC.Options.occurency == Occurency.$) {
-            DOLLARradio.setSelected(true);
-            EUROradio.setSelected(false);
-            YENradio.setSelected(false);
-            BTCradio.setSelected(false);
-        }
-        else if(LOGIC.Options.occurency == Occurency.€) {
-            DOLLARradio.setSelected(false);
-            EUROradio.setSelected(true);
-            YENradio.setSelected(false);
-            BTCradio.setSelected(false);
-        }
-        else if(LOGIC.Options.occurency == Occurency.¥) {
-            DOLLARradio.setSelected(false);
-            EUROradio.setSelected(false);
-            YENradio.setSelected(true);
-            BTCradio.setSelected(false);
-        }
-        else if(LOGIC.Options.occurency == Occurency.Ƀ) {
-            DOLLARradio.setSelected(false);
-            EUROradio.setSelected(false);
-            YENradio.setSelected(false);
-            BTCradio.setSelected(true);
-        }
-
-        if(LOGIC.Options.moneySpecifier == MoneySpecifier.K){
-            Kradio.setSelected(true);
-            MIOradio.setSelected(false);
-            MRDradio.setSelected(false);
-        }
-        else if(LOGIC.Options.moneySpecifier == MoneySpecifier.Mio){
-            Kradio.setSelected(false);
-            MIOradio.setSelected(true);
-            MRDradio.setSelected(false);
-        }
-        else if(LOGIC.Options.moneySpecifier == MoneySpecifier.Mrd){
-            Kradio.setSelected(false);
-            MIOradio.setSelected(false);
-            MRDradio.setSelected(true);
-        }
         return MainPanel;}
 }

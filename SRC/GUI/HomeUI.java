@@ -14,7 +14,11 @@ public class HomeUI {
     private JButton OPTIONSButton;
     private JButton EXITButton;
 
-    public HomeUI() {
+
+    public JPanel init() {
+        MainPanel.setBounds(0,0,1920,700);
+
+        // set action listener
         NEWGAMEButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -46,11 +50,7 @@ public class HomeUI {
                 System.exit(0);
             }
         });
-    }
 
-    public JPanel init() {
-        MainPanel.setOpaque(false);
-        MainPanel.setBounds(0,0,1920,700);
         return MainPanel;
     }
 }
